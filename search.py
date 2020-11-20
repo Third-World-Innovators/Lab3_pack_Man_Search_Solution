@@ -94,7 +94,7 @@ def depthFirstSearch(problem):
     fringe = util.Stack()
     visited = []
 
-    # push the start node on the fringe stack
+    # Start:  by putting any one of the graph's vertices on top of a stack.
     fringe.push((start, [], 1))
 
     while not fringe.isEmpty():
@@ -121,6 +121,7 @@ def breadthFirstSearch(problem):
     "*** YOUR CODE HERE ***"
 
     start = problem.getStartState()
+
 
     # create fringe queue and visited list
     fringe = util.Queue()
